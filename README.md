@@ -336,20 +336,23 @@ Std_estime = 0.2216143620633058
 
 
 ```python
-hist = ax.hist(_, bins=100) # draw histogram
-x = np.linspace(min(_), max(_), 100) # generate PDF domain points
+fig2, ax2 = plt.subplots()
+hist = ax2.hist(df2['Log2 Corrected Abundance Ratio'], bins=100) # draw histogram
+x = np.linspace(min(df2['Log2 Corrected Abundance Ratio']), max(df2['Log2 Corrected Abundance Ratio']), 100) # generate PDF domain points
 dx = hist[1][1] - hist[1][0] # Get single value bar height
-scale = len(_)*dx # scale accordingly
-ax.plot(x, norm.pdf(x, mu, sqrt(S_2))*scale) # compute theoritical PDF and draw it
+scale = len(df2['Log2 Corrected Abundance Ratio'])*dx # scale accordingly
+ax2.plot(x, norm.pdf(x, mu, np.sqrt(Std))*scale) # compute theoritical PDF and draw it
+
+fig2.show()
+
 ```
 
-![Histogramme à inserez ici](histogram_log2FC.png "Title")
 ![](assets/hist.png "MS convert screencast")
 
 ##### 5. Quelles remarques peut-on faire à l'observation de l'histogramme et de loi théorique?
 
 ```
-
+La loi normale ne semble pas super adaptée...
 
 ```
 
