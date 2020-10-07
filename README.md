@@ -353,6 +353,7 @@ fig2.show()
 
 ```
 La loi normale ne semble pas super adaptée...
+La moyenne etant inférieure à 0, les protéines sont moins abondantes en présence de tétracycline que sans. 
 
 ```
 
@@ -367,6 +368,7 @@ Sont condidérées comme surabondantes les proteines remplissant ces deux critè
 * <img src="https://render.githubusercontent.com/render/math?math=\text{p-value}>0.001">
 
 ![Volcano plot + quadrant à inserez ici](histogram_log2FC.png "Title")
+![](assets/volcano.png "MS convert screencast")
 
 ### Analyse Fonctionelle de pathway
 
