@@ -82,19 +82,19 @@ Par intérprétation du fichier fasta: 4091
 ```
 ##### Comment la liste des séquences des protéines est-elle établie ? Est-elle complète? 
 ```
-
+On ne sait pas si elle est complète.
 ```
 ##### Quelle est la différence entre des séquences Swiss-prot et TremBL?
 ```
-
+Sur Swiss_prot, aspect manuel, il y en a moins que sur TremBL.
 ```
 ##### A quoi correspond la protéine P00761 et quelle est sa fonction ? 
 ```
-
+Cela correspond à la trypsine, une protéase pour cliver les protéines.
 ```
 ##### Pourquoi doit-on rajouter cette protéine dans le fichier FASTA final du protéome bactérien?
 ```
-
+Il est important de la mettre dans le fichier pour en tenir compte lors de l'analyse.
 ```
 
 ### Création de la « peak list »
@@ -118,7 +118,7 @@ De nombreux petits logiciels existent pour convertir vos fichiers bruts dans un 
 ##### Les données de QExactive ont été enregistrées en mode centroïde et non pas en mode Profiling. D’après vous quelle est la différence entre les deux modes?
 
 ```
-
+Non traité
 ```
 
 ### Identification des peptides par approche PSM Peptide to Spectrum Matching
@@ -141,28 +141,35 @@ NB : si vous avez des messages d’erreur qui s’affichent (missing precursor c
 #### Questions 
 ##### Pourquoi est-il important de bien choisir sa base de données?
 ```
+Pour avoir une analyse cohérente et comparer ce qui est comparable.
 ```
 ##### Est-ce que l’on retrouvera toujours les mêmes protéines au cours du temps ?
 ```
+Si les données ne changent pas et que les algorithmes ne contiennent pas d'aléatoire alors les résultats devraient rester les mêmes.
 ```
 
 ##### Comment la taille de la base de données peut affecter le score de la protéine recherchée?
 ```
+L'impact est inversement proportionnel.
 ```
 
 ##### Est-ce que les modifications ajoutées sont les seules modifications que l’on peut attendre dans une expérience de shotgun proteomics?
 ```
+Non, cela dépends de la protéines
 ```
 
 ##### Vous avez choisi la trypsine comme enzyme et choisi « specific », qu’est-ce que cela signifie, et comment cela peut affecter le processing ? 
 ```
+La trypsine clive après la lysine et l'arginine. (Sauf si suivi d'une proline.)
 ```
 
 ##### Qu’est-ce qu’un missed cleavage ? pourquoi 2 et pas 0 ?
 ```
+Miss cleveage c'est lorsque la trypsine n'a pas clivé correctement. On garde une marge d'erreur.
 ```
 ##### Qu’est-ce que la tolérance en masse, comment la calcule-t-on ?
 ```
+La tolérance en masse c'est l'écart de masse toléré entre "le peptide experimentale et celui théorique qui match". Cela dépend de la résolution et de la qualité de calibration.
 ```
 
 ### Visualisation des PSM, peptides - protéines
