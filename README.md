@@ -34,7 +34,12 @@ Dans un dossier où vous conserverez toutes les données de ce TP, vous aurez pl
 
 Cette partie du TP est découpée en 4 grandes parties avec pour chacune des parties, le cheminement à suivre qui n’est pas exhaustif, c’est-à-dire que vous pouvez de vous-même aller explorer les différentes options proposées par les logiciels (en particulier PeptideShaker). A l’issue du TP, vous completerez le fichier markdown avec vos réponses aux différentes questions qui vous seront posées.
 
-### Création de la base de données des protéines
+### Création de la base de données des protéinesx = [1, 2, 2, 3, 4, 4, 4, 4, 4, 5, 5]
+pyplot.hist(x, range = (0, 5), bins = 5, color = 'yellow',
+            edgecolor = 'red')
+pyplot.xlabel('valeurs')
+pyplot.ylabel('nombres')
+pyplot.title('Exemple d\' histogramme simple')
 
 #### Questions: 
 
@@ -312,7 +317,18 @@ Representer graphiquement les données d'abondance et construire la pvalue des f
 
 ##### 3. A partir de cette échantillon de ratio d'abondance,  estimez la moyenne <img src="https://render.githubusercontent.com/render/math?math=\mu"> et l'ecart-type <img src="https://render.githubusercontent.com/render/math?math=\sigma"> d'une loi normale.
 ```
+mu = np.mean(df2['Log2 Corrected Abundance Ratio'])
+mu = -0.6386262156443276
 
+
+Std = np.var(df2['Log2 Corrected Abundance Ratio'])
+Std = 0.2214874351663623
+
+n = len(df2['Log2 Corrected Abundance Ratio'])
+n = 1746
+
+Std_estime = (n/(n-1)) * Std
+Std_estime = 0.2216143620633058
 
 ```
 
@@ -320,19 +336,23 @@ Representer graphiquement les données d'abondance et construire la pvalue des f
 
 
 ```python
-hist = ax.hist(_, bins=100) # draw histogram
-x = np.linspace(min(_), max(_), 100) # generate PDF domain points
+fig2, ax2 = plt.subplots()
+hist = ax2.hist(df2['Log2 Corrected Abundance Ratio'], bins=100) # draw histogram
+x = np.linspace(min(df2['Log2 Corrected Abundance Ratio']), max(df2['Log2 Corrected Abundance Ratio']), 100) # generate PDF domain points
 dx = hist[1][1] - hist[1][0] # Get single value bar height
-scale = len(_)*dx # scale accordingly
-ax.plot(x, norm.pdf(x, mu, sqrt(S_2))*scale) # compute theoritical PDF and draw it
+scale = len(df2['Log2 Corrected Abundance Ratio'])*dx # scale accordingly
+ax2.plot(x, norm.pdf(x, mu, np.sqrt(Std))*scale) # compute theoritical PDF and draw it
+
+fig2.show()
+
 ```
 
-![Histogramme à inserez ici](histogram_log2FC.png "Title")
+![](assets/hist.png "MS convert screencast")
 
 ##### 5. Quelles remarques peut-on faire à l'observation de l'histogramme et de loi théorique?
 
 ```
-
+La loi normale ne semble pas super adaptée...
 
 ```
 
