@@ -63,22 +63,22 @@ L'objectif de cette approche est d'observer des différences entre les condition
 ##### L’identification des protéines/ peptides se réalise grâce à une base de données de protéines. Quelle comparaison va être effectuée?
 
 ```
-
+Comparaison des données expérimentales au protéome d'Uniprot.
 ```
 
 ##### Existe t’il d’autres types de bases de données pour réaliser l’identification des peptides trypsiques dans un spectre?
 
 ```
-
+Pour faire sans le protéome d'Uniprot, on pourrait utiliser des librairies spectrales par homologie plutôt que d'utiliser les librairies avec des fichiers fasta.
 ```
 
 ##### Est-ce qu’il est possible d’identifier des peptides sans base de données?
 ```
-
+Oui comme dit précédemment.
 ```
 ##### Combien de protéines sont identifiées dans le protéome bactérien?
 ```
-
+Par intérprétation du fichier fasta: 4091
 ```
 ##### Comment la liste des séquences des protéines est-elle établie ? Est-elle complète? 
 ```
