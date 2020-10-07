@@ -367,7 +367,6 @@ Sont condidérées comme surabondantes les proteines remplissant ces deux critè
 * <img src="https://render.githubusercontent.com/render/math?math=\text{Log}_2(\text{abundance ratio})\gt\mu%2B\sigma">  
 * <img src="https://render.githubusercontent.com/render/math?math=\text{p-value}>0.001">
 
-![Volcano plot + quadrant à inserez ici](histogram_log2FC.png "Title")
 ![](assets/volcano.png "MS convert screencast")
 
 ### Analyse Fonctionelle de pathway
@@ -378,7 +377,20 @@ Nous allons implementer une approche ORA (Over Representation Analysis) naive.
 
 Quelles sont leurs identifiants UNIPROT ?
 ``` 
-
+1862    P0A8V6
+1898    P0A9Q1
+1929    P02358
+1968    P0ACF8
+1977    P62399
+1979    P0A905
+1982    P76506
+1984    P13036
+1989    P10384
+1992    P06971
+1996    P0A910
+2003    P06996
+2009    P76344
+2021    P02931
 
 
 ```
