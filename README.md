@@ -1,3 +1,7 @@
+
+ANNE RAVIX et MELANIE SAWARYN (probleme ordinateurs)
+
+
 # tp-proteomics
 ## Contexte Biologique
 Vous allez utiliser des outils informatiques qui vous permettront d’analyser des données brutes issues d’une analyse Shotgun Proteomics récemment publiée dans le journal Science sous le titre "Real-time visualization of drug resistance acquisition by horizontal gene transfer reveals a new role for AcrAB-TolC multidrug efflux pump".
@@ -37,13 +41,13 @@ Cette partie du TP est découpée en 4 grandes parties avec pour chacune des par
 ##### En quoi consiste l’approche Shotgun proteomics?
 
 ```
-
+Une approche de protéomique (bottom-up - notion de digestion), identification de protéines par spéctophotométrie de masse.
 ```
 
 ##### Quel est l’objectif de cette approche ?
 
 ```
-
+L'objectif de cette approche est d'observer des différences entre les conditions pour trouver des informations de biomarqueurs.
 ```
 
 #### Procédure
